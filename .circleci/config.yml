@@ -8,4 +8,4 @@ jobs: # 一連のステップ
       - checkout # ソース コードを作業ディレクトリにチェックアウトする特別なステップ
       - run: # テストを実行します
           name: test
-          command: merge.js
+          command: node merge.js
