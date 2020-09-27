@@ -23,17 +23,17 @@ for (let line of lines_a) {
     else outputtext_2 = outputtext_2 + line + '\n';
 }
 
-fs.writeFileSync('result.txt', outputtext_1, (err, data) => {
+fs.writeFileSync('./result.txt', outputtext_1, (err, data) => {
     if(err) console.log(err);
     else console.log('write end_final1');
 });
 
-fs.appendFileSync('result.txt', outputtext_3, (err, data) => {
+fs.appendFileSync('./result.txt', outputtext_3, (err, data) => {
     if(err) console.log(err);
     else console.log('write end_final3');
 });
 
-fs.appendFileSync('result.txt', outputtext_2, (err, data) => {
+fs.appendFileSync('./result.txt', outputtext_2, (err, data) => {
     if(err) console.log(err);
     else console.log('write end_final2');
 });
